@@ -7,8 +7,10 @@ html {
 	/* http://www.splintered.co.uk/experiments/49/ */
 	min-height: 100%;
 	margin-bottom: 1px;
-  color: #4F4F4F;
-  background: #FFFFFF url(images/background.gif) 0px 0px repeat-x;
+  color: #1F1F1F;
+  color: #305F2F;
+  color: #193F17;
+  background: url(images/background.gif) 0px 0px repeat;
 }
 
 body {
@@ -21,100 +23,64 @@ body {
 #container {
 	position: relative;
   width: 760px;
-	margin: 0px auto;
-  /*border: 1px dashed #FF0000;*/
-}
-
-#header {
-  margin: 0px 0px 40px 0px;
-  padding: 0px 0px 0px 10px;
+	margin: 40px auto;
+  margin-top: 70px;
+  background: url(images/container.gif) 0px 0px repeat;
+  border: 5px solid #FFFFFF;
 }
 
 
 /********************************* top elements *********************************/
 
 #navwrapper {
-  background: url(images/BankColumns.jpg) 160px -40px no-repeat;
-  clear: both;
-  width: 745px;
-  margin: 0px 0px 0px 10px;
+  float: left;
+  width: 246px;
+  margin: -40px 0px 0px 10px;
+  padding: 122px 0px 0px 0px;
+  background: url(images/navtop.gif) 0px 0px no-repeat;
+  position: relative;
+  z-index: 2000;
+}
+
+#navwrapper02 {
+  width: 246px;
+  padding: 0px 0px 46px 0px;
+  background: url(images/navbottom.gif) bottom left no-repeat;
 }
 
 #nav {
 	list-style: none;
 	display: block;
+  padding: 5px 0px 5px 1px;
   background: url(images/nav.gif) 0px 0px repeat-y;
   font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.1em;
+  position: relative;
+  z-index: 2000;
 }
 
 #nav li {
 	margin: 0px 0px 6px 0px;
-  padding: 0px 0px 0px 20px;
-}
-
-#nav li.top {
-  background: url(images/navtop.gif) 0px 0px no-repeat;
-  padding-top: 10px;
-}
-
-#nav li.bottom {
-  background: url(images/navbottom.gif) bottom left no-repeat;
-  padding-bottom: 10px;
-  margin-bottom: 0px;
 }
 
 
 /******************************** content sections ****************************/
 
-#leftcolumn {
+#content {
 	position: relative;
   display: inline;
-	margin: 20px 0px 0px 12px;
-	float: left;
-	width: 200px;
-  clear: both;
-  text-align: left;
-  /*border: 1px solid red;*/
-}
-
-#leftcolumn img {
-  border: 5px solid #C2ECF9;
-  margin: 0px 0px 0px 2px;
-}
-
-#leftcolumn .buttonL img {
-  border: none;
-  float: left;
-  margin: 20px 10px 10px 60px;
-}
-
-#rightcolumn {
-	position: relative;
-  display: inline;
-  margin: 20px 30px 0px 0px;
-  font-size: 0.9em;
+  margin: 30px 30px 10px 0px;
+  font-size: 1.0em;
   line-height: 1.7em;
 	float: right;
-	width: 480px;
-  /*border: 1px solid red;*/
+	width: 450px;
 }
 
-.button {
-  float: left;
-  position: relative;
-  z-index: 2000;
-  margin: 10px 10px 10px -150px;
-}
-
-#rightcolumn p {
+#content p {
 	text-indent: 10px;
   text-align: justify;
 	margin: 0px 0px 5px 0px;
-}
-
-.jumface {
-  clear: both;
-  height: 100px;
 }
 
 /********************************* links ********************************/
@@ -122,84 +88,77 @@ body {
 ul#nav a {
 	text-decoration: none;
   text-transform: uppercase;
-	width: 100%;
-  padding: 0px 2px;
-  color: #125F93;
-  background: #C2ECF9;
+  margin: 0px 16px;
+  display: block;
+  color: #305F2F;
+  background: transparent;
 }
 
 ul#nav a:hover, ul#nav a:focus {
-  color: #FFFFFF;
-  background: #0D75A9;
+  color: #305F2F;
+  background: #EBF6E9;
 }
 
 p a {
   text-decoration: none;
   padding: 0px 2px;
-	background: #FFFFFF;
-  color: #125F93;
-  border-bottom: 1px dashed #125F93;
+	background: #EBF6E9;
+  color: #193F17;
+  border-bottom: 1px dashed #193F17;
 }
 
 p a:hover, p a:focus {
-	color: #125F93;
-  background: #C2ECF9;
-  border-bottom: none;
+	color: #193F17;
+  background: #FFFFFF;
 }
 
 #bottom a {
 	text-decoration: none;
-  color: #999999;
-  background: #FFFFFF;
+  padding: 0px 2px;
+  color: #466F45;
+  background: transparent;
 }
 
 #bottom a:hover, #bottom a:focus {
-	color: #125F93;
+  color: #193F17;
   background: #FFFFFF;
 }
 
 
-/******************************** content sections ****************************/
+/******************************** footer sections ****************************/
 
 .left {
 	float: left;
 }
 
 #bottom {
-	color: #2BAC00;
-  background: #FFFFFF;
 	text-align: right;
   font-size: .6em;
   clear: both;
-  padding: 15px 30px 30px 0px;
+  padding: 5px 30px 15px 0px;
 }
-
-
-
 
 /************************** header typestyles ***************************/
 
 h1
 {
-	position: relative;
-  color: #FFFFFF;
-  background: inherit;
-	text-align: left;
-	font-size: 2em;
-  line-height: 1.5em;
-	font-weight: normal;
-	font-family: "Arial Black", "Lucida Sans Unicode", "Arial Black", "Trebuchet MS", "Helvetica", "Century Gothic", sans-serif;
+	display: none;
 }
 
 h2
 {
-  color: #000000;
-  background: #FFFFFF;
+  color: #305F2F;
+  color: #FFFFFF;
+  background: transparent;
+  background: url(images/header02.gif) 0px 0px repeat;
+  padding: 12px;
+  border: 3px solid #FFFFFF;
+  margin-bottom: 15px;
 	text-decoration: none;	
-	text-align: left;
-	font-size: 1.5em;
+	text-align: center;
+	font-size: 2.0em;
 	font-weight: normal;
-	font-family: "Century Gothic", "Trebuchet MS", "Tahoma", "Agency FB", "Helvetica", "Lucida Sans Unicode", sans-serif;
+	font-family: "Trebuchet MS", "Tahoma", "Century Gothic", "Agency FB", "Helvetica", "Lucida Sans Unicode", sans-serif;
 }
 
 h3
@@ -211,6 +170,22 @@ h3
 	font-size: 0.8em;
 	font-weight: normal;
 	font-family: "Century Gothic", "Trebuchet MS", "Tahoma", "Agency FB", "Helvetica", "Lucida Sans Unicode", sans-serif;
+}
+
+h4
+{
+  color: #FFFFFF;
+  background: #C2ECF9;
+	text-decoration: none;	
+	text-align: left;
+	font-size: 2.2em;
+	font-weight: bold;
+	font-family: "Trebuchet MS", "Tahoma", "Century Gothic", "Agency FB", "Helvetica", "Lucida Sans Unicode", sans-serif;
+  float: right;
+  position: relative;
+  z-index: 2000;
+  margin: -65px 0px 0px 0px;
+  padding: 10px;
 }
 
 
