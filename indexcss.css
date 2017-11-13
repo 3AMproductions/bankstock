@@ -1,0 +1,283 @@
+/*********************************** body ***************************************/
+
+*{margin:0;padding:0;}
+img{border:none;}
+
+html {
+	/* http://www.splintered.co.uk/experiments/49/ */
+	min-height: 100%;
+	margin-bottom: 1px;
+  color: #4F4F4F;
+  background: #FFFFFF url(images/background.gif) 0px 0px repeat-x;
+}
+
+body {
+	position: relative;
+  text-align: left;
+	font-size: 100%;
+	font-family: "Trebuchet MS", "Verdana", "Lucida Sans Unicode", "Century Gothic", sans-serif;
+}
+
+#container {
+	position: relative;
+  width: 760px;
+	margin: 0px auto;
+  /*border: 1px dashed #FF0000;*/
+}
+
+#header {
+  margin: 0px 0px 40px 0px;
+  padding: 0px 0px 0px 10px;
+}
+
+
+/********************************* top elements *********************************/
+
+#navwrapper {
+  background: url(images/BankColumns.jpg) 160px -40px no-repeat;
+  clear: both;
+  width: 745px;
+  margin: 0px 0px 0px 10px;
+}
+
+#nav {
+	list-style: none;
+	display: block;
+  background: url(images/nav.gif) 0px 0px repeat-y;
+  font-weight: bold;
+}
+
+#nav li {
+	margin: 0px 0px 6px 0px;
+  padding: 0px 0px 0px 20px;
+}
+
+#nav li.top {
+  background: url(images/navtop.gif) 0px 0px no-repeat;
+  padding-top: 10px;
+}
+
+#nav li.bottom {
+  background: url(images/navbottom.gif) bottom left no-repeat;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+
+
+/******************************** content sections ****************************/
+
+#leftcolumn {
+	position: relative;
+  display: inline;
+	margin: 20px 0px 0px 12px;
+	float: left;
+	width: 200px;
+  clear: both;
+  text-align: left;
+  /*border: 1px solid red;*/
+}
+
+#leftcolumn img {
+  border: 5px solid #C2ECF9;
+  margin: 0px 0px 0px 2px;
+}
+
+#leftcolumn .buttonL img {
+  border: none;
+  float: left;
+  margin: 20px 10px 10px 60px;
+}
+
+#rightcolumn {
+	position: relative;
+  display: inline;
+  margin: 20px 30px 0px 0px;
+  font-size: 0.9em;
+  line-height: 1.7em;
+	float: right;
+	width: 480px;
+  /*border: 1px solid red;*/
+}
+
+.button {
+  float: left;
+  position: relative;
+  z-index: 2000;
+  margin: 10px 10px 10px -150px;
+}
+
+#rightcolumn p {
+	text-indent: 10px;
+  text-align: justify;
+	margin: 0px 0px 5px 0px;
+}
+
+.jumface {
+  clear: both;
+  height: 100px;
+}
+
+/********************************* links ********************************/
+
+ul#nav a {
+	text-decoration: none;
+  text-transform: uppercase;
+	width: 100%;
+  padding: 0px 2px;
+  color: #125F93;
+  background: #C2ECF9;
+}
+
+ul#nav a:hover, ul#nav a:focus {
+  color: #FFFFFF;
+  background: #0D75A9;
+}
+
+p a {
+  text-decoration: none;
+  padding: 0px 2px;
+	background: #FFFFFF;
+  color: #125F93;
+  border-bottom: 1px dashed #125F93;
+}
+
+p a:hover, p a:focus {
+	color: #125F93;
+  background: #C2ECF9;
+  border-bottom: none;
+}
+
+#bottom a {
+	text-decoration: none;
+  color: #999999;
+  background: #FFFFFF;
+}
+
+#bottom a:hover, #bottom a:focus {
+	color: #125F93;
+  background: #FFFFFF;
+}
+
+
+/******************************** content sections ****************************/
+
+.left {
+	float: left;
+}
+
+#bottom {
+	color: #2BAC00;
+  background: #FFFFFF;
+	text-align: right;
+  font-size: .6em;
+  clear: both;
+  padding: 15px 30px 30px 0px;
+}
+
+
+
+
+/************************** header typestyles ***************************/
+
+h1
+{
+	position: relative;
+  color: #FFFFFF;
+  background: inherit;
+	text-align: left;
+	font-size: 2em;
+  line-height: 1.5em;
+	font-weight: normal;
+	font-family: "Arial Black", "Lucida Sans Unicode", "Arial Black", "Trebuchet MS", "Helvetica", "Century Gothic", sans-serif;
+}
+
+h2
+{
+  color: #000000;
+  background: #FFFFFF;
+	text-decoration: none;	
+	text-align: left;
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: "Century Gothic", "Trebuchet MS", "Tahoma", "Agency FB", "Helvetica", "Lucida Sans Unicode", sans-serif;
+}
+
+h3
+{
+  color: #868686;
+  background: #FFFFFF;
+	text-decoration: none;	
+	text-align: left;
+	font-size: 0.8em;
+	font-weight: normal;
+	font-family: "Century Gothic", "Trebuchet MS", "Tahoma", "Agency FB", "Helvetica", "Lucida Sans Unicode", sans-serif;
+}
+
+
+/********************************* form ********************************/
+
+form{
+	margin: 0px 15px 20px 15px;
+	padding: 0px;
+	text-align: left;
+}
+
+.row {
+	clear: both;
+	display: block;
+	margin: 5px 0px 5px 0px;
+	text-align: left;
+	height: 30px;
+}
+
+fieldset {
+	border: 0px;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+	clear: both;
+}
+
+fieldset label {
+	float: left;
+	width: 65px;
+	text-align: left;
+}
+
+fieldset input {
+	position: relative;
+	width: 200px;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+fieldset textarea {
+	position: relative;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+input#preview {
+	float: none;
+	clear: both;
+	margin: 20px 0px 0px 60px;
+	width: 120px;
+}
+
+input#edit, input#submit {
+	float: none;
+	clear: none;
+	margin: 20px 0px 0px 20px;
+	width: 120px;
+}
+
+em {
+	text-decoration: underline;
+}
+
+.contactbody {
+	margin: 0px 0px 0px 10px;
+}
